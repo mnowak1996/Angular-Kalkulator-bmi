@@ -8,5 +8,5 @@
        [(ngModel)]="Wzrost">
 <p>Podany wzrost to {{getWzrost()}}</p>
 <button class="btn-primary" (click)="onLicz()">Oblicz</button>
-<h2 [ngStyle]="{backgroundColor: getColor()}"> Wynik to {{getWynik()}}</h2>
+<h2 [ngStyle]="{backgroundColor: getColor()}" [ngStyle]="{color: fontColor}"> Wynik to {{getWynik()}}</h2>
 

@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./licz.component.css']
 })
 export class LiczComponent implements OnInit {
-  Waga = 0;
-  Wzrost = 0 ;
+  Waga = 80;
+  Wzrost = 1.9 ;
   Wynik = 0;
+  color;
+  fontColor='white';
 
   getWaga() {
     return this.Waga;
@@ -23,7 +25,20 @@ export class LiczComponent implements OnInit {
     return this.Wynik;
   }
   getColor(){
-    return this.Wynik > 24 ? 'red' : 'blue' ;
+    if(this.Wynik <= 0){
+      this.color='pink';
+    }
+    else if(this.Wynik >18.5 && this.Wynik <=25){
+      this.color = 'green';
+    }
+    else{
+      this.color='red';
+    }
+    return this.color;
+  }
+
+  getFontColor(){
+    return this.fontColor='white';
   }
 
   constructor() { }
