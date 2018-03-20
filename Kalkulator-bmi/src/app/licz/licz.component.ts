@@ -31,14 +31,14 @@ export class LiczComponent implements OnInit {
     else if(this.Wynik >18.5 && this.Wynik <=25){
       this.color = 'green';
     }
-    else{
-      this.color='red';
+    else {
+      this.color= 'red';
     }
     return this.color;
   }
 
-  getFontColor(){
-    return this.fontColor='white';
+  getFontColor() {
+    return this.fontColor = 'white';
   }
 
   constructor() { }
