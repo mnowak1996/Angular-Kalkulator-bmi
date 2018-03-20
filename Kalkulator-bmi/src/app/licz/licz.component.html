@@ -9,4 +9,4 @@
 <p>Podany wzrost to {{getWzrost()}}</p>
 <button class="btn-primary" (click)="onLicz()">Oblicz</button>
 <h2 [ngStyle]="{backgroundColor: getColor(), color: getFontColor()}"> Wynik to {{getWynik()}}</h2>
-
+<h2> Wynik to {{getWaga()/(getWzrost()*getWzrost())}}</h2>

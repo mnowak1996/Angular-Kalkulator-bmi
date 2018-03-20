@@ -32,13 +32,14 @@ export class LiczComponent implements OnInit {
       this.color = 'green';
     }
     else {
-      this.color= 'red';
+      this.color= 'mistyrose';
+      this.fontColor='red';
     }
     return this.color;
   }
 
   getFontColor() {
-    return this.fontColor = 'white';
+    return this.fontColor;
   }
 
   constructor() { }
