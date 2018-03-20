@@ -22,6 +22,9 @@ export class LiczComponent implements OnInit {
   getWynik() {
     return this.Wynik;
   }
+  getColor(){
+    return this.Wynik > 24 ? 'red' : 'blue' ;
+  }
 
   constructor() { }
 
