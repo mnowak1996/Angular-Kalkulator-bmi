@@ -1,0 +1,12 @@
+<h2>Podaj wage</h2>
+<input type="text"
+       class="form-control"
+       [(ngModel)]="Waga">
+<p>Podana waga to {{getWaga()}}</p>
+<h2>Podaj wzrost</h2>
+<input type="text" class="form-control"
+       [(ngModel)]="Wzrost">
+<p>Podany wzrost to {{getWzrost()}}</p>
+<button class="btn-primary" (click)="onLicz()">Oblicz</button>
+<h2>Wynik to {{getWynik()}}</h2>
+
